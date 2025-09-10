@@ -6,7 +6,7 @@ interface RowCardProps {
 
 export default function RowCard({ item }: RowCardProps) {
   return (
-    <div className="flex flex-col sm:flex-row items-center sm:items-start bg-white border border-gray-200 rounded-xl p-4 hover:shadow-[0px_0px_25px_10px_#00000024] hover:border hover:border-black hover:scale-105 transition-all ease-in">
+    <div className="flex flex-col sm:flex-row items-center sm:items-start bg-white border border-gray-400 rounded-xl p-4 hover:shadow-[0px_0px_25px_10px_#00000024] hover:border hover:border-black hover:scale-105 transition-all ease-in">
       {/* Patient Photo */}
       <img
         src={item.photo_url || "/placeholder.png"}
@@ -31,3 +31,4 @@ export default function RowCard({ item }: RowCardProps) {
     </div>
   );
 }
+
